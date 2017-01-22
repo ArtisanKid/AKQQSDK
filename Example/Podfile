@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AKQQSDK_Example' do
+  pod 'AKQQSDK', :path => '../'
+
+  target 'AKQQSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
