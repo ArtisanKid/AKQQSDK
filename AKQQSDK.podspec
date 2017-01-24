@@ -30,13 +30,17 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'AKQQSDK/Classes/**/*'
-  
+  s.source_files = 'AKQQSDK/Classes/**/*.{h,m}'
+
   # s.resource_bundles = {
   #   'AKQQSDK' => ['AKQQSDK/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'SystemConfiguration'
   # s.dependency 'AFNetworking', '~> 2.3'
+
+  s.libraries = 'c++', 'sqlite3', 'z'
+  s.vendored_frameworks = 'AKQQSDK/Classes/TencentOpenAPI.framework'
+  s.resource = 'AKQQSDK/Classes/TencentOpenApi_IOS_Bundle.bundle'
 end
