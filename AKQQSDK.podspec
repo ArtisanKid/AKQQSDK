@@ -38,9 +38,9 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'SystemConfiguration'
+  s.libraries = 'c++', 'sqlite3', 'z'
   # s.dependency 'AFNetworking', '~> 2.3'
 
-  s.libraries = 'c++', 'sqlite3', 'z'
   s.vendored_frameworks = 'AKQQSDK/Classes/TencentOpenAPI.framework'
   s.resource = 'AKQQSDK/Classes/TencentOpenApi_IOS_Bundle.bundle'
 end
