@@ -31,14 +31,15 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'AKQQSDK/Classes/**/*.{h,m}'
+  s.preserve_paths = 'AKWeiboSDK/Classes/*.{txt,md,doc,docx,pdf}'
 
   # s.resource_bundles = {
   #   'AKQQSDK' => ['AKQQSDK/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'SystemConfiguration'
-  # s.libraries = 'c++', 'sqlite3'
+  s.frameworks = 'CoreGraphics', 'CoreTelephony', 'Security', 'SystemConfiguration'
+  s.libraries = 'c++', 'iconv', 'sqlite3', 'z'
   # s.dependency 'AFNetworking', '~> 2.3'
 
   s.vendored_frameworks = 'AKQQSDK/Classes/TencentOpenAPI.framework'

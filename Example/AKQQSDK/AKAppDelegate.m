@@ -7,6 +7,7 @@
 //
 
 #import "AKAppDelegate.h"
+#import <AKQQSDK/QQApiInterface.h>
 
 @implementation AKAppDelegate
 
